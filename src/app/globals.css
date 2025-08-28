@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --background: #0a1833;
+  --foreground: #f8fafc;
+  --accent: #2563eb;
+  --accent2: #06b6d4;
+  --gold: #ffd700;
+  --surface: #162447;
+  --surface-light: #23395d;
+  --grey: #64748b;
+}
+
+body {
+  background:
+    radial-gradient(circle at 70% 20%, rgba(255,215,0,0.18) 0 200px, transparent 300px),
+    repeating-linear-gradient(135deg, rgba(37,99,235,0.08) 0 20px, transparent 20px 40px),
+    linear-gradient(120deg, #0a1833 0%, #162447 60%, #2563eb 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
+  min-height: 100vh;
+}
+
+.bg-primary {
+  background: var(--background) !important;
+
+.bg-surface {
+  background: var(--surface) !important;
+}
+.bg-surface-light {
+  background: var(--surface-light) !important;
+}
+.text-accent {
+  color: var(--accent) !important;
+}
+.text-accent2 {
+  color: var(--accent2) !important;
+}
+.text-gold {
+  color: var(--gold) !important;
+}
+.border-accent {
+  border-color: var(--accent) !important;
+}
+.border-gold {
+  border-color: var(--gold) !important;
+}
+.shadow-lg {
+  box-shadow: 0 4px 24px 0 rgba(37,99,235,0.15);
+}
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--background);
+  background: var(--accent);
+  transition: background 0.2s, color 0.2s;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background: var(--accent);
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Theme accents */
+.border-accent {
+  border-color: var(--accent) !important;
+}
+.bg-surface {
+  background: var(--surface) !important;
+}
+.text-accent {
+  color: var(--accent) !important;
+}
+.text-grey {
+  color: var(--grey) !important;
+}
+.shadow-lg {
+  box-shadow: 0 4px 24px 0 rgba(30,58,138,0.15);
+}
