@@ -13,15 +13,16 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white/80 backdrop-blur-md border-b-2 border-[#1e3a8a] py-3 px-2 flex justify-center sticky top-0 z-50 shadow-sm">
-      <ul className="flex flex-wrap gap-4 md:gap-8">
+    <nav className="w-full bg-white/95 backdrop-blur-lg border-b border-slate-200/50 py-4 px-4 flex justify-center sticky top-0 z-50 shadow-lg">
+      <ul className="flex flex-wrap gap-6 md:gap-10">
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-lg font-semibold text-[#1e293b] hover:text-[#1e3a8a] transition-colors px-3 py-1 rounded-md hover:bg-[#e5e7eb]"
+              className="text-lg font-semibold text-slate-700 hover:text-blue-600 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-blue-50 relative group"
             >
               {item.label}
+              <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </Link>
           </li>
         ))}

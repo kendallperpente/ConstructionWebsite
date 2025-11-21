@@ -3,13 +3,12 @@
 
 
 :root {
-  --background: #0a1833;
-  --foreground: #f8fafc;
-  --accent: #2563eb;
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --accent: #3b82f6;
   --accent2: #06b6d4;
-  --gold: #ffd700;
-  --surface: #162447;
-  --surface-light: #23395d;
+  --surface: #1e293b;
+  --surface-light: #334155;
   --grey: #64748b;
 }
 
@@ -25,6 +24,7 @@ body {
 
 .bg-primary {
   background: var(--background) !important;
+}
 
 .bg-surface {
   background: var(--surface) !important;
@@ -49,7 +49,6 @@ body {
 }
 .shadow-lg {
   box-shadow: 0 4px 24px 0 rgba(37,99,235,0.15);
-}
 }
 
 a {
@@ -89,4 +88,75 @@ a:hover {
 }
 .shadow-lg {
   box-shadow: 0 4px 24px 0 rgba(30,58,138,0.15);
+}
+
+/* Modern Animations */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% { 
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% { 
+    transform: translateY(-30px) rotate(-5deg);
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1.05) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(1deg);
+  }
+  100% {
+    transform: scale(1.05) rotate(0deg);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+.animate-ken-burns {
+  animation: ken-burns 20s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }

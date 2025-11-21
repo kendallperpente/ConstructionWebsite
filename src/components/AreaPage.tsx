@@ -4,7 +4,7 @@ import Link from 'next/link';
 interface AreaPageProps {
   area: string;
   description: string;
-  image: string;
+  image?: string;
 }
 
 
@@ -28,7 +28,15 @@ const AreaPage: React.FC<AreaPageProps> = ({ area, description, image }) => {
     <main className="min-h-screen bg-gradient-to-br from-[#f8fafc] via-[#e5e7eb] to-[#f1f5f9] text-[#1e293b] flex flex-col items-center justify-center px-4 py-8">
       <div className="relative max-w-2xl w-full rounded-3xl shadow-2xl p-0 overflow-hidden flex flex-col items-center backdrop-blur-md bg-white/90 border-2 border-[#1e3a8a]/20">
         <div className="w-full h-56 sm:h-72 bg-gradient-to-tr from-[#1e3a8a]/10 to-[#64748b]/10 flex items-center justify-center">
-          <img src={image} alt={area} className="w-4/5 h-44 sm:h-60 object-cover rounded-xl shadow-lg border-4 border-[#1e3a8a] bg-[#e5e7eb]/60" />
+          <div className="w-4/5 h-44 sm:h-60 bg-gradient-to-br from-blue-500 to-teal-500 rounded-xl shadow-lg border-4 border-[#1e3a8a] flex items-center justify-center">
+            <div className="text-white text-6xl opacity-50">
+              {area === 'Kitchen' && '🍳'}
+              {area === 'Bathroom' && '🛁'}
+              {area === 'Living Room' && '🛋️'}
+              {area === 'Bedroom' && '🛏️'}
+              {area === 'Outdoor' && '🌳'}
+            </div>
+          </div>
         </div>
         <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#1e3a8a]/10 rounded-full blur-2xl z-0" />
         <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#64748b]/10 rounded-full blur-2xl z-0" />
