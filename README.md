@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Morningwood Construction
+
+Professional construction and renovation company website built with Next.js.
+
+## About
+
+Morningwood Construction is a small full-service remodeling and renovation company owned and operated by Todd Slack. We provide quality craftsmanship for residential projects including kitchens, bathrooms, living spaces, bedrooms, and outdoor areas.
+
+## Services
+
+- **Kitchen Renovations** - Modern kitchen remodeling with custom cabinetry
+- **Bathroom Remodeling** - Luxury bathroom upgrades and custom solutions  
+- **Living Spaces** - Open concept designs and room transformations
+- **Bedroom Renovations** - Cozy and modern bedroom makeovers
+- **Outdoor Projects** - Patios, decks, and landscaping
+- **General Contracting** - Carpentry, plumbing, electrical, tiling, drywall, painting
+- **Handyman Services** - Small repairs and maintenance
+- **Masonry Division** - Cretescapes Decorative Concrete and Masonry
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server  
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15.5.2 with Turbopack
+- **Styling**: Tailwind CSS with custom gradients and animations
+- **Font**: Geist Sans & Geist Mono  
+- **Development**: TypeScript, React 18
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+**Todd Slack** - Owner/Operator  
+Morningwood Construction  
+Licensed & Insured
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit our website contact page for project estimates and consultations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 Morningwood Construction. All rights reserved.
